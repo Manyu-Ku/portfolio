@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Landing - Forty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<style>
+			#goToTopBtn {
+				display: none; /* Initially hide the button */
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				/* padding: 10px; */
+				color: #fff;
+				border: none;
+				cursor: pointer;
+				font-size: 15px;
+			}
+		
+			#goToTopBtn:hover {
+				color: #9bf1ff;
+			}
+		</style>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Home</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="https://www.linkedin.com/in/manyuku/" class="button primary fit">Contact Me On Linkedin</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic06.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Ecommerce Customer Segmentation Analysis</h1>
+							</header>
+							<div class="content">
+								<p>Leveraging RFM model and KMeans clustering for tailored strategies</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h2>Data Source</h2>
+								</header>
+								<p><a href="https://www.kaggle.com/datasets/mkechinov/ecommerce-events-history-in-cosmetics-shop?datasetId=426888&sortBy=voteCount" target="_blank">eCommerce Events History in Cosmetics Shop_kaggle</a>
+								<p>The provided dataset encompasses behavior data spanning five months (Oct 2019 - Feb 2020) from a medium-sized cosmetics online store.</p>
+								<h2>Table of Contents</h2>
+								<ul class="actions">
+									<li><a href="#two" class="button next scrolly">1. Business Problem</a></li>
+									<li><a href="#three" class="button next scrolly">2. Objectives</a></li>
+									<li><a href="#four" class="button next scrolly">3. Methodology</a></li>
+								</ul>
+								<ul class="actions">
+									<li><a href="#five" class="button next scrolly">4. Data Analysis</a></li>
+									<li><a href="#six" class="button next scrolly">5. Recommendations</a></li>
+									<li><a href="#seven" class="button next scrolly">6. References</a></li>
+								</ul>
+							</div>
+						</section>
+
+						<!-- Two -->
+						<section id="two">
+							<div class="inner">
+								<header class="major">
+									<h2>1. Business Problem</h2>
+								</header>
+								<p>The business is facing a significant challenge in driving sales growth and improving the conversion rate. To address this pain point, the objective is to build personalized marketing campaigns based on different types of customers, determined by their behaviors. By segmenting customers and understanding their unique characteristics, targeted strategies can be implemented to enhance sales performance and increase the conversion rate.</p>
+							</div>
+						</section>
+
+						<!-- Three -->
+						<section id="three">
+							<div class="inner">
+								<header class="major">
+									<h2>2. Objectives</h2>
+								</header>
+								<p>This analysis aims to achieve the following objectives:</p>
+								<ol>
+									<li>Assess the overall performance and trends of the business.</li>
+									<li>Segment customers based on their historical records.</li>
+									<li>Identify the patterns and characteristics of each customer segment.</li>
+									<li>Determine the peak traffic periods to inform future marketing strategies.</li>
+								</ol>
+							</div>
+						</section>
+
+						<!-- Four -->
+						<section id="four">
+							<div class="inner">
+								<header class="major">
+									<h2>3. Methodology</h2>
+								</header>
+								<p>The analysis in this report was conducted using Jupyter Notebook and implemented in Python.</p>
+								<ul>
+									<li>Libraries used: <b style="color: #6fc3df;">Pandas | NumPy | Matplotlib | Seaborn | Scikit-learn</b></li>
+									<li>Techniques/Models applied: <b style="color: #6fc3df;"> Data Analysis | KMeans Clustering | RFM Model | Data Visualization</b></li>
+								</ul>
+							</div>
+						</section>
+
+						<!-- Five -->
+						<section id="five">
+							<div class="inner">
+								<header class="major">
+									<h2>4. Data Analysis</h2>
+								</header>
+								<p>The following outline provides a concise summary of the analysis, highlighting the essential steps and key findings. To view the complete code, please click<a href="https://github.com/Manyu-Ku/Ecomm_Customer_Segmentation_Analysis/blob/main/RFM%20Segmentation.ipynb" target="_blank"> here for ipynb file.</a></p>
+								<h3>4-1 Data Preprocessing</h3>
+								<ul>
+									<li>Import libraries</li>
+									<li>Read and concatenate datasets of 5 months</li>
+									<li>View the first 5 & the last 5 rows of the dataset</li>
+									<li>Check the size of the data and the data types of all columns</li>
+									<li>Convert 'event_time' to DateTime format</li>
+									<li>Check & handle NA values</li>
+									<li>Dropping irrelevant columns</li>
+									<li>Explore numeric variable 'price' & fix the abnormal values</li>
+									<li>View the unique values count of all columns</li>
+									<li>Create a sub dataset df_sales in order to calculate sales easily</li>
+								</ul>
+								<h3>4-2 E-commerce Performence Exploration</h3>
+								<ul>
+									<li>Find out the traffic and sales trend</li>
+									<img src="images/trend.png"/><br><br>
+									<li>Find out the monthly traffic, sales and conversion rate</li>
+									<img src="images/monthly.png"/><br><br>
+									<div class="box">
+										<p ><b style="color: #6fc3df;">Note:</b><br>In February, all key metrics including traffic, sales, and conversion rate declined compared to the previous month. These metrics have shown no significant increases over the past five months, except for a seasonal peak in November. This serves as a warning signal.</p>
+									</div>
+									<li>Find out the peak time of the traffic</li>
+									<img src="images/peak.png"/><br><br>
+									<div class="box">
+										<p><b style="color: #6fc3df;">Note:</b><br>The heatmap effectively addressed objective 4 by identifying the peak traffic periods, providing valuable information for informing future marketing strategies.</p>
+									</div>
+									<li>Calculate cart abandonment rate (incompleted transactions/purchases)</li>
+									<img src="images/ab.png"/><br><br>
+									<li>Calculate the average order value</li>
+									<img src="images/avo.png"/>
+								</ul>
+								<h3>4-3 RFM Calculation</h3>
+								<div class="box">
+									<p>The RFM model is based on three quantitative factors:</p>
+									<ul>
+										<li><b>Recency</b>: How recently a customer has made a purchase</li>
+										<li><b>Frequency</b>: How often a customer makes a purchase</li>
+										<li><b>Monetary value</b>: How much money a customer spends on purchases</li>
+									</ul>
+									<p>Source: <a href="https://www.investopedia.com/terms/r/rfm-recency-frequency-monetary-value.asp" target="_blank"> Investopedia. (2022, November 19). RFM (Recency, Frequency, Monetary Value)</a></p>
+								</div>
+								<ul>
+									<li>Calculate 'recency' by month: set 2020 Feb as the reference month, label the user's most recent purchase month as follows: if the user's most recent purchase month is February, it is labeled as '0', and if it is January, it is labeled as '1'</li>
+									<li>Calculate 'frequency' by counting the total number of sessions a user has had in the span of 5 months</li>
+									<li>Calculate 'monetary' value by summing the total amount a user has spent in the span of 5 months</li>
+									<li>Remove outliers & plot the distribution of RFM</li>
+									<img src="images/hist.png"/><br><br>
+								</ul>
+								<h3>4-4 KMeans Clustering using RFM</h3>
+								<ul>
+									<li>Standardize RFM data</li>
+									<li>Determine the optimal cluster size using the elbow method, and adjust if necessary to align with the project's objectives</li>
+									<li>Apply the KMeans clustering algorithm and generate a scatter plot to visualize the results</li>
+									<img src="images/cluster.png"/><br><br>
+									<li>Find out the mean values of each cluster</li>
+									<img src="images/mean.png"/>
+									<li>Renaming clusters according to their specific behaviors and features as follow:</li><br>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Cluster No.</th>
+													<th>Features</th>
+													<th>Label as</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>0</td>
+													<td>customers with relatively recent activity, moderate frequency, and high monetary value</td>
+													<td>Potential High-Value Customer</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>customers who have made recent purchases with low frequency and low monetary value</td>
+													<td>New Customers</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>customers who made a purchase in the past but are now inactive</td>
+													<td>Dormant Customers</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>customers who have shopped recently and exhibit high frequency and high monetary value</td>
+													<td>Loyal Customers</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<li>Find out the proportion of each cluster and plot the clusters' mean values of RFM</li>
+									<img src="images/pie.png"/><br><br>
+									<div class="box">
+										<p ><b style="color: #6fc3df;">Note:</b><br>The proportions of the two profitable segments, Potential High-Value Customers and Loyal Customers, are relatively low. On the other hand, the proportion of Dormant Customers is relatively high. The primary objective of the business is to decrease the proportion of Dormant Customers.</p>
+									</div>
+								</ul>
+								<h3>4-5 Random Sampling and Pattern Observation for Clustering Validation</h3>
+								<ul>
+									<li>Combine the cluster data with the original dataframe to analyze and observe distinct trends among the clusters</li>
+									<li>Find out the cart abandonment rate by cluster</li>
+									<img src="images/cartab.png"/><br><br>
+									<li>Calculate average order value by cluster</li>
+									<img src="images/avoc.png"/><br><br>
+									<li>Plot the distribution of active months by cluster</li>
+									<img src="images/active.png"/><br><br>
+									<li>Take random 30 samples from each cluster to observe their behavior records</li>
+									<img src="images/new.png"/>
+									<img src="images/loyal.png"/>
+									<img src="images/dormant.png"/>
+									<img src="images/potential.png"/>
+								</ul>
+								<h3>4-6 Insights</h3>
+								<div class="box">
+									<ul>
+										<li>Dormant customers represent approximately one-third of the total customer base. Upon analyzing the sample records and observing a mean frequency of 1.06, it is evident that most dormant customers are one-time purchasers. This highlights a significant challenge for the business in terms of customer retention.</li><br>
+										<li>Loyal customers exhibit a high purchase frequency and generate substantial sales, making them a valuable segment for any business. However, it is noteworthy that their cart abandonment rate is the highest among all clusters. This could be attributed to a higher number of products being added to the cart compared to other clusters.</li><br>
+										<li>New customers account for nearly half of all customers, which is a positive sign if the business is performing well. However, based on the observed traffic and sales trends, it is evident that the business struggles to retain a significant portion of new customers.</li><br>
+										<li>Potential high-value customers represent another profitable and stable cluster that requires attention. They exhibit the lowest cart abandonment rate and the highest average order values. It is essential to monitor the frequency of this cluster over a longer period to determine whether their shopping habits remain consistent or if their interest starts to decline.</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<!-- Six -->
+						<section id="six">
+							<div class="inner">
+								<header class="major">
+									<h2>5. Recommendations</h2>
+								</header>
+								<p>Based on the insights, here are some tailored recommendations:</p>
+								<ol>
+									<li><b style="color: #6fc3df;">Conduct a customer survey</b>: It is recommended to conduct a customer survey targeting dormant customers. Offer incentives such as free samples or discounts to encourage their participation. Through the survey, gather insights into their reasons for not shopping with the business anymore. This information can help identify areas of improvement and develop targeted strategies to win back their engagement.</li>
+									<li><b style="color: #6fc3df;">Re-engage new customers</b>: Send limited-time discount offers or exclusive promotions to new customers who have been inactive for a certain period, such as 20 days. By providing enticing incentives, the business can encourage these customers to make repeat purchases and increase their level of engagement.</li>
+									<li><b style="color: #6fc3df;">Nurture potential high-value customers</b>: Pay special attention to potential high-value customers who show promising purchase behavior. Implement personalized marketing strategies, such as tailored product recommendations or exclusive perks, to maintain their interest and loyalty. Monitor their shopping habits over time to ensure they remain engaged and satisfied with their experience.</li>
+								</ol>
+							</div>
+						</section>
+
+						<!-- Seven -->
+						<section id="seven">
+							<div class="inner">
+								<header class="major">
+									<h2>6. References</h2>
+								</header>
+								<a href="https://www.wix.com/blog/ecommerce/2022/08/ecommerce-metrics?utm_source=google&utm_medium=cpc&utm_campaign=19554094039" target="_blank">17 eCommerce metrics that you should be tracking. (2022, August 9). Wix ECommerce Blog</a><br>
+								<a href="https://www.optimove.com/resources/learning-center/rfm-segmentation" target="_blank">RFM Segmentation | RFM Analysis, Model, Marketing & Software. (n.d.). Optimove</a><br>
+								<a href="https://www.kaggle.com/code/jianlizhou/customer-segmentation-by-rfm-model-and-k-means" target="_blank">Jianlizhou. (2020, December 6). Customer segmentation by RFM model and K-means. Kaggle</a>
+							</div>
+						</section>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/Manyu-Ku" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/manyuku/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+			<button id="goToTopBtn">Go to Top</button>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				// Get the button element
+				const goToTopBtn = document.getElementById('goToTopBtn');
+			
+				// Show the button when the user scrolls down 20% of the viewport height
+				window.addEventListener('scroll', () => {
+					if (window.scrollY > 0.2 * window.innerHeight) {
+						goToTopBtn.style.display = 'block';
+					} else {
+						goToTopBtn.style.display = 'none';
+					}
+				});
+			
+				// Smoothly scroll to the top when the button is clicked
+				goToTopBtn.addEventListener('click', () => {
+					window.scrollTo({
+						top: 0,
+						behavior: 'smooth'
+					});
+				});
+			</script>
+	</body>
+</html>
